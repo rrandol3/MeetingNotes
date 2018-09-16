@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MeetingNotes1.DataAccess
 {
-    public interface IMeetingDOA
+    public interface IMeetingDAO
     {
         Meeting GetMeeting(int meetingId);
         List<Meeting> GetMeetings(string userId);

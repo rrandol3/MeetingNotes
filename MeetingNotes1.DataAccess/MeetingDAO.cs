@@ -7,7 +7,7 @@ using MeetingNotes1.DataAccess.EntityFramework;
 
 namespace MeetingNotes1.DataAccess
 {
-    public class MeetingDOA : IMeetingDOA
+    public class MeetingDAO : IMeetingDAO
     {
         public void DeleteMeeting(Meeting meeting)
         {

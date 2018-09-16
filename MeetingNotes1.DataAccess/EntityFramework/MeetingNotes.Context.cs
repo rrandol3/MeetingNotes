@@ -18,6 +18,7 @@ namespace MeetingNotes1.DataAccess.EntityFramework
         public MeetingNotesEntities()
             : base("name=MeetingNotesEntities")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

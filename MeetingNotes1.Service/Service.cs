@@ -10,7 +10,7 @@ namespace MeetingNotes1.Service
 {
     public class Service : IService
     {
-        static readonly IMeetingDOA meetingDoa = new MeetingDOA();
+        static readonly IMeetingDAO meetingDoa = new MeetingDAO();
 
         //Meeting Services
         public Meeting GetMeeting(int meetingId)

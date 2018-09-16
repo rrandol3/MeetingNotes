@@ -66,8 +66,8 @@
     <Compile Include="EntityFramework\Note.cs">
       <DependentUpon>MeetingNotes.tt</DependentUpon>
     </Compile>
-    <Compile Include="IMeetingDOA.cs" />
-    <Compile Include="MeetingDOA.cs" />
+    <Compile Include="IMeetingDAO.cs" />
+    <Compile Include="MeetingDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
