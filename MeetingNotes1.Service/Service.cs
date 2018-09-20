@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MeetingNotes1.BusinessRules;
 
 namespace MeetingNotes1.Service
 {
@@ -13,25 +14,25 @@ namespace MeetingNotes1.Service
         static readonly IMeetingDAO meetingDoa = new MeetingDAO();
 
         //Meeting Services
-        public Meeting GetMeeting(int meetingId)
+        public BusinessRules.Meeting GetMeeting(int meetingId)
         {
             return meetingDoa.GetMeeting(meetingId);
         }
 
-        public List<Meeting> GetMeetings(string userId)
+        public List<BusinessRules.Meeting> GetMeetings(string userId)
         {
             return meetingDoa.GetMeetings(userId);
         }
 
-        public void SaveMeeting(Meeting meeting)
+        public void SaveMeeting(BusinessRules.Meeting meeting)
         {
             meetingDoa.SaveMeeting(meeting);
         }
-        public void DeleteMeeting(Meeting meeting)
+        public void DeleteMeeting(BusinessRules.Meeting meeting)
         {
             meetingDoa.DeleteMeeting(meeting);
         }
-        public void UpdateMeeting(Meeting meeting)
+        public void UpdateMeeting(BusinessRules.Meeting meeting)
         {
             meetingDoa.UpdateMeeting(meeting);
         }

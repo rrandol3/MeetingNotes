@@ -45,6 +45,7 @@
     <Compile Include="EntityFramework\ActionItem.cs">
       <DependentUpon>MeetingNotes.tt</DependentUpon>
     </Compile>
+    <Compile Include="EntityFramework\AutoMapperProfile.cs" />
     <Compile Include="EntityFramework\Meeting.cs">
       <DependentUpon>MeetingNotes.tt</DependentUpon>
     </Compile>
@@ -66,11 +67,14 @@
     <Compile Include="EntityFramework\Note.cs">
       <DependentUpon>MeetingNotes.tt</DependentUpon>
     </Compile>
-    <Compile Include="IMeetingDAO.cs" />
-    <Compile Include="MeetingDAO.cs" />
+    <Compile Include="EntityFramework\IMeetingDAO.cs" />
+    <Compile Include="EntityFramework\MeetingDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="AutoMapper">
+      <Version>7.0.1</Version>
+    </PackageReference>
     <PackageReference Include="EntityFramework">
       <Version>6.2.0</Version>
     </PackageReference>
@@ -101,6 +105,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MeetingNotes1.BusinessRules\MeetingNotes1.BusinessRules.csproj">
+      <Project>{f6beceb3-6667-429c-8b3d-68eabf4e7607}</Project>
+      <Name>MeetingNotes1.BusinessRules</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

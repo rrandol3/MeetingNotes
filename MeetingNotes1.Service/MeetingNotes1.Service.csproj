@@ -45,6 +45,10 @@
     <Compile Include="Service.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MeetingNotes1.BusinessRules\MeetingNotes1.BusinessRules.csproj">
+      <Project>{f6beceb3-6667-429c-8b3d-68eabf4e7607}</Project>
+      <Name>MeetingNotes1.BusinessRules</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MeetingNotes1.DataAccess\MeetingNotes1.DataAccess.csproj">
       <Project>{b4260965-6783-47ab-88ec-87b24f10a3e8}</Project>
       <Name>MeetingNotes1.DataAccess</Name>
