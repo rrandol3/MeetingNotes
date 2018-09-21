@@ -18,7 +18,11 @@ namespace MeetingNotes1.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            Mapper.Initialize(cfg => cfg.AddProfile<AutoMapperProfile>());
+            Mapper.Initialize(cfg =>
+            {
+                cfg.AddProfile<EntityToBusinessProfile>();
+                cfg.AddProfile<ModelToBusinessProfile>();
+            });
         }
     }
 }

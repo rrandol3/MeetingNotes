@@ -9,6 +9,8 @@ using MeetingNotes1.BusinessRules;
 
 namespace MeetingNotes1.Service
 {
+    // ** Facade pattern.
+    // ** Repository pattern (Service could be split up in individual Repositories)
     public class Service : IService
     {
         static readonly IMeetingDAO meetingDoa = new MeetingDAO();

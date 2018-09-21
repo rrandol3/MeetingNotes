@@ -45,7 +45,7 @@
     <Compile Include="EntityFramework\ActionItem.cs">
       <DependentUpon>MeetingNotes.tt</DependentUpon>
     </Compile>
-    <Compile Include="EntityFramework\AutoMapperProfile.cs" />
+    <Compile Include="EntityFramework\EntityToBusinessProfile.cs" />
     <Compile Include="EntityFramework\Meeting.cs">
       <DependentUpon>MeetingNotes.tt</DependentUpon>
     </Compile>

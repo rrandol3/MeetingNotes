@@ -8,6 +8,7 @@ using MeetingNotes1.BusinessRules;
 
 namespace MeetingNotes1.Service
 {
+    // single interface to all 'repositories'
     public interface IService
     {
         //Meeting Repository

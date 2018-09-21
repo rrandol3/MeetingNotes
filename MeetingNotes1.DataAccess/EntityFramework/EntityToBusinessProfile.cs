@@ -7,9 +7,9 @@ using AutoMapper;
 
 namespace MeetingNotes1.DataAccess.EntityFramework
 {
-    public class AutoMapperProfile : Profile
+    public class EntityToBusinessProfile : Profile
     {
-        public AutoMapperProfile()
+        public EntityToBusinessProfile()
         {
             CreateMap<Meeting, BusinessRules.Meeting>();
             CreateMap<BusinessRules.Meeting, Meeting>();

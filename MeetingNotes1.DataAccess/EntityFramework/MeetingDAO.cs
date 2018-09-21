@@ -11,10 +11,6 @@ namespace MeetingNotes1.DataAccess
 {
     public class MeetingDAO : IMeetingDAO
     {
-        static MeetingDAO()
-        {
-            
-        }
         public void DeleteMeeting(BusinessRules.Meeting meeting)
         {
             using (var context = new MeetingNotesEntities())
